@@ -13,6 +13,7 @@ const initializeSocket = require('./utils/socket')
 
 
 require('dotenv').config()
+require('./utils/cron') 
 
 app.use(cors({
     origin: process.env.FRONTEND_ORIGIN,
